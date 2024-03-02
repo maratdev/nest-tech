@@ -13,7 +13,7 @@ async function bootstrap() {
     .setTitle('Lesson api')
     .setDescription('This api lesson')
     .setVersion('1.0')
-    .addTag('APi')
+    .addTag('API')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
