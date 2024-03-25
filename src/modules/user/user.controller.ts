@@ -29,7 +29,7 @@ export class UserController {
 
   @UseGuards(JwtAuthGuard) // проверка аторизован или нет пользователь
   @Delete()
-  deleteUser(@Req() request) {
+  deleteUser(@Req() request): Promise<boolean> {
     return this.userService.deleteUser(request.user.email);
   }
 }
